@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products</title>
+
+	<!-- logo -->
+	<link rel="icon" href="./images/logo.png" type="image/png">
+
+	<!-- iconscout cdn -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+	<!-- Google Fonts(Montserrat)-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./css/product.css">
+</head>
+<body>
+	
+	<!---------------- Navbar------------------->
+	<nav>
+		<div class="container nav_container">
+			<a href="index.html"><h4>Kape-Kita</h4></a>
+			<ul class="nav_menu">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="product.html">Product</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About us</a></li>
+
+			</ul>
+			<button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+			<button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+		</div>
+	</nav>
+<!----------------End Of Navbar------------------->
+
+
+<!-- ========================= banner =================================== -->
+  <section class="banner">
+  	<div class="button">
+  		<img src="./images/product.png">
+
+  		<button onClick="btn()"class="bt_a">Shop Now</button>	
+  		<button onClick="btn()" class="bt_b">Shop Now</button>
+  	</div>
+  </section>
+<!-- ========================= end of banner =================================== -->
+
+
+<section class="cart">
+	<h1>Products</h1> 
+		<div class="search"><input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search ">
+			<i class="uil uil-search"></i></div>
+			<div class="item">
+				<button class="shop"><i class="uil uil-shopping-cart"></i></button>
+				<button class="comment" onClick="reload()"><i class="uil uil-comment-alt-message"></i></button>
+			</div>
+	
+
+</section>
+
+
+<!-- ========================= Product =================================== -->
+<section class="product" id="Product">
+	<div class="row" id="Products">
+  <div class="column">
+    <div class="card">
+    	<img src="./images/caramel.png">
+      <h3>Caramel Macchiato Mix</h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+   
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    	<img src="./images/serpentina.png">
+      <h3>Serpentina Mix</h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+     
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    	<img src="./images/vanila.png">
+      <h3>Vanilla Mix</h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    	<img src="./images/mangosteen.png">
+      <h3>Mangosteen Mix</h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+   
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    	<img src="./images/chocolate.png">
+      <h3>Chocolate Mix </h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    	<img src="./images/black.png">
+      <h3>Black Coffee Mix</h3>
+      <p>280.00php - Net Wt. 200g</p>
+      <span></span>
+      <button class="buy" onclick="toggle()">Buy</button>
+      <button class="add-to-cart">Add To Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="select"></div>
+
+</section>
+
+<!-- ========================= End of Product =================================== -->
+<div id="popup">
+	<h3>Thank You For Buying Our Product</h3>
+	<button class="pop" onclick="toggle()">Close</button>
+</div>
+<!-- ========================= footer =================================== -->
+	<footer class="footer">
+			
+			<div class="container footer_container">
+				
+				<div class="logo"><img src="./images/logo.png"></div>
+				<h5>Get connected: </h5>
+				<div class="icons">
+
+				
+					<button onclick="facebook()" id="fb"><i class="uil uil-facebook-f"></i></button>
+					<button onclick="insta()" id="insta"><i class="uil uil-instagram"></i></button>
+					<button onclick="mail()" id="mail"><i class="uil uil-envelope"></i></button>
+					<button onclick="messenger()" id="messenger"><i class="uil uil-facebook-messenger"></i></button>
+					<button onclick="twitter()" id="twitter"><i class="uil uil-twitter"></i></button>
+					</div>
+
+					<h5>@kape-kita </h5>
+
+					<div class="line"><hr  
+						width="130%" 
+        		size="4" 
+        		align="center"
+        		color= "white" noshade></div>
+
+        		<h6>© 2022 Copyright Kape-Kita. All Rights Reserved.</h6>
+
+			</div>
+
+								
+	</footer>
+<!-- ========================= End of footer =================================== -->
+
+</body>
+</html>
+
+
+<script src="./main.js"></script>
+
+</body>
+</html>
